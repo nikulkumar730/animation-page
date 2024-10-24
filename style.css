@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+    font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.decoration-none{
+  text-decoration: none;
+}
+.decoration-none:hover{
+  text-decoration: none;
+
+}
+
+.main-color{
+    color: #61CE70;
+}
+.bg-main-color{
+    background-color: #61CE70;
+}
+.active{
+    color: #61CE70 !important;
+}
+.bg-black{
+background-color: black;
+}
+.bg-white{
+  background-color: #fff;
+}
+.text-black{
+color: black;
+}
+/* {
+    color: #61CE70;
+} */
+.nav-link:hover,.dropdown-item:hover{
+    color: #61CE70 !important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  .hero-bg{
+    background-image: url(./image/hero-bg.png);
+    
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .object-fit-glass{
+    object-fit: cover;
+  }
+  .hero-bg::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(0,212,255,0) 100%);
+  }
+  .text-hero{
+    font-size: 7rem !important;
+  }
+  .img-hero{
+bottom: -10vw;
+  }
+
+  .box{
+    padding: 25px 30px;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-color: #61CE70;
+    background-image: var(--mdb-navbar-toggler-icon-bg) !important;
+}
+
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+}
+
+
+
+.p-inline10{
+  padding-inline: 20px !important;
+}
+.number{
+  background-color: #ffffff6b;
+  display: inline-block;
+  padding: 15px 20px;
+}
+.rounded-40{
+  border-radius: 40px;
+}
+.bg-light-2{
+
+  background-color: #F5F5F5;
+}
+.text-cap{
+text-transform: capitalize !important;
+}
+
+ .arrow-on-hover {
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.over-btn {
+  transition: transform 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.over-btn:hover {
+  transition:  0.8s;
+  transform: translate(calc(-50% + 40px), -50%); 
+}
+
+.arrow {
+ 
+  position: absolute;
+  background-color: #61CE70;
+  border-radius: 50px;
+  padding: 0.4rem 0;
+  width: 100%;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+} 
+
+/* accordion  */
+
+.accordion-item {
+  border: none !important;
+  margin: 10px 0;
+}
+.accordion{
+  background-color: transparent !important;
+}
+
+
+/* emial */
+.hero-bg-1{
+  background-image: url(./image/email-bg.png);
+  
+  /* height: 100%; */
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #0B0C0E;
+}
+
+.hero-bg-1::before{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, #0B0C0E 0%, #0B0C0E 50%, rgba(0, 213, 255, 0) 100%);
+}
+.input-email
+{
+  border: none;
+  outline: none;
+}
+
+.btn-primary-1{
+  background-color: #000 !important;
+  color: #fff !important;
+  padding: 15px 20px !important;
+  border-radius: 50% !important;
+
+}
+.btn-primary-1:hover{
+  background-color: #61CE70 !important;
+}
+
+.border-bottom-1{
+  border-bottom: 5px solid #000;
+ 
+}
+
+ul{
+  list-style: none;
+  padding: 0 !important;
+}
+
+.letter-spacing{
+  letter-spacing: 1px;
+}
+
+.social-i:hover{
+background-color: #61CE70 !important;
+margin-top:-20px;
+transition: 0.5s;
+}
+/* [[[[[[[[[[[[[silder]]]]]]]]]]]]] */
+
+
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ MEDIA ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]*/
+/* media */
+/* Extra Small Devices (Phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .text-hero{
+    font-size: 3rem !important;
+  }
+  .z-in{
+    z-index: -1 !important;
+  }
+  .object-fit-glass{
+    object-fit: contain;
+    height: 40vh !important;
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .z-in{
+    z-index: -1 !important;
+  }
+}
+
+/* Medium Devices (Desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .z-in{
+    z-index: -1 !important;
+  }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .z-in{
+    z-index: -1 !important;
+  }
+}
+
+/* Extra Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Your styles here */
+}
+
+/* Extra Extra Large Devices (Desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your styles here */
+}
+
+/* owl-slider section start */
+
+.owl-slider .card {
+  border-radius: 40px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.owl-slider .item img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 50%; */
+}
+
+@media (max-width: 768px) {
+  .owl-slider .card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+ .owl-slider .card {
+    padding: 10px;
+  }
+}
+
+
+.owl-slider .owl-prev, .owl-next {
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  /* height: 10%; */
+  /* width: 10%; */
+  cursor: pointer;
+}
+
+.owl-slider .owl-prev:hover, .owl-next:hover {
+  background-color: #0056b3;
+}
+
+
+/* owl-slider section end */
